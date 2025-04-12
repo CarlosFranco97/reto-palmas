@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import RetoPalmas from "../RetoPalmas";
+import RetoPalmas from "../pages/home/RetoPalmas";
 
 const router = createBrowserRouter([
     {
