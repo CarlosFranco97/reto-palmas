@@ -63,11 +63,11 @@ const ShoppingCartMenu = ({ openShoppingCartMenu, onClose }: ShoppingCartMenuPro
         }
     ]
 
-    
-    const totalPrice = calculateTotalPrice(ShoppingCart);
-    
 
- 
+    const totalPrice = calculateTotalPrice(ShoppingCart);
+
+
+
     return (
         <>
             <div
@@ -77,7 +77,7 @@ const ShoppingCartMenu = ({ openShoppingCartMenu, onClose }: ShoppingCartMenuPro
             >
 
             </div>
-            <section className={`${openShoppingCartMenu ? 'block' : 'hidden'} w-[80%] h-full overflow-auto bg-white fixed top-0 right-0 z-20 py-5 md:w-[50%] shadow-lg  flex flex-col gap-10`}>
+            <section className={`${openShoppingCartMenu ? 'block' : 'hidden'} w-[90%] h-full overflow-auto bg-white fixed top-0 right-0 z-20 py-5 md:w-[50%] shadow-lg  flex flex-col gap-10`}>
                 <div>
                     <div className='flex justify-between items-center px-5'>
                         <h4 className='font-bold text-black/50 text-3xl'>
@@ -99,8 +99,11 @@ const ShoppingCartMenu = ({ openShoppingCartMenu, onClose }: ShoppingCartMenuPro
                                     className='h-auto w-full flex justify-around items-center'
                                 >
 
-                                    <div className='flex justify-center items-center w-24 h-24 px-3 py-3 rounded-2xl bg-black/10 shadow-lg'>
-                                        <img src={productsCart.image} alt={productsCart.name} />
+                                    <div className='flex justify-center items-center w-24 h-32 p-3 rounded-2xl bg-black/10 shadow-lg'>
+                                        <img
+                                            className='object-contain'
+                                            src={productsCart.image}
+                                            alt={productsCart.name} />
                                     </div>
 
                                     <div className='flex flex-col justify-center items-center gap-2 sm:flex-row sm:gap-10'>
