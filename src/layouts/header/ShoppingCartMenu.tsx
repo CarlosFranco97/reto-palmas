@@ -13,7 +13,7 @@ interface ShoppingCartMenuProps {
 const ShoppingCartMenu = ({ openShoppingCartMenu, onClose }: ShoppingCartMenuProps) => {
 
     //para skeleton
-    const [loading, setLoading] = useState<boolean>(true);
+    //const [loading, setLoading] = useState<boolean>(true);
 
     interface Product {
         id: string,
