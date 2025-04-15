@@ -6,17 +6,17 @@ const Services = () => {
                 SERVICIOS
             </h2>
             <div className='flex flex-col justify-center items-center'>
-                <div className='bg-[url("/img/techo-estrellado.webp")] w-96 h-[150px] bg-center bg-no-repeat flex items-center px-4 shadow-lg'>
+                <div className='bg-[url("/image/techo-estrellado.webp")] bg-center bg-no-repeat w-96 h-[180px] flex items-center px-4 shadow-lg'>
                     <h4 className='text-2xl'> 
                         TECHO ESTRELLADO
                     </h4>
                 </div>
-                <div className='bg-[url("/img/luces-led-interior.webp")] w-96 h-[150px] bg-center bg-no-repeat flex justify-end items-center px-4 shadow-lg'>
+                <div className='bg-[url("/image/luces-led-interior.webp")] w-[400px] h-[200px] bg-center bg-no-repeat flex justify-end items-center px-4 shadow-lg'>
                     <h4 className='text-2xl'> 
                         LUCES LED INTERIOR
                     </h4>
                 </div>
-                <div className='bg-[url("/img/repro-performance.webp")] w-96 h-[150px] bg-center bg-no-repeat flex justify-start items-center px-4 shadow-lg'>
+                <div className='bg-[url("/image/repro-performance.webp")] w-96 h-[150px] bg-center bg-no-repeat flex justify-start items-center px-4 shadow-lg'>
                     <h4 className='text-2xl w-40'> 
                         REPRO Y PERFORMANCE
                     </h4>

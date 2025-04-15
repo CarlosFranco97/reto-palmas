@@ -2,6 +2,7 @@ import modeloRopaMujerCompleta from '../../../assets/image/modelo-ropa-mujer-com
 import modeloRopaMujer from '../../../assets/image/modelo-ropa-mujer.webp';
 import modeloRopaHombreCompleta from '../../../assets/image/modelo-ropa-hombre-completa.webp';
 import modeloRopaHombre from '../../../assets/image/modelo-ropa-hombre.webp';
+import { Link } from 'react-router-dom';
 const Clothes = () => {
     return (
         <section className='w-full min-h-screen'>
@@ -15,32 +16,36 @@ const Clothes = () => {
                         <div className='bg-white h-64 w-96 relative'>
                             <img
                                 src={modeloRopaHombreCompleta}
-                                className='absolute bottom-0 left-0 object-contain'
+                                className='w-64 h-64 absolute bottom-0 left-0 object-contain'
                                 alt="modelo-ropa-hombre" />
                             <img
                                 src={modeloRopaHombre}
-                                className='absolute bottom-0 right-0 object-contain'
+                                className='w-64 h-64 absolute bottom-0 right-0 object-contain'
                                 alt="modelo-ropa-hombre" />
                         </div>
-                        <h4 className='border-b-4 border-[#DD0000] text-center text-4xl'>
+                        <Link
+                            to={'/menclothing'} 
+                            className='border-b-4 border-[#DD0000] text-center text-4xl cursor-pointer'>
                             HOMBRE
-                        </h4>
+                        </Link>
                     </div>
 
                     <div className='flex flex-col justify-center items-center gap-5'>
                         <div className='bg-white h-64 w-96 relative'>
                             <img
                                 src={modeloRopaMujerCompleta}
-                                className='absolute bottom-0 right-0 object-contain'
+                                className='w-64 h-64 absolute bottom-0 right-0 object-contain'
                                 alt="modelo-ropa-mujer" />
                             <img
                                 src={modeloRopaMujer}
-                                className='absolute bottom-0 left-0 object-contain'
+                                className='w-64 h-64 absolute bottom-0 left-0 object-contain'
                                 alt="modelo-ropa-mujer" />
                         </div>
-                        <h4 className='border-b-4 border-[#DD0000] text-center text-4xl'>
+                        <Link
+                            to={'/womenclothing'} 
+                            className='border-b-4 border-[#DD0000] text-center text-4xl'>
                             MUJER
-                        </h4>
+                        </Link>
                     </div>
 
                 </section>

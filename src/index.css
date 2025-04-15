@@ -2,9 +2,18 @@
 @import "tailwindcss";  
 
 
+
 body {
     font-family: 'Libre Franklin', sans-serif;
     background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
     background-color: black;
     background-attachment: fixed;
+}
+
+
+
+.container-unique-slider .swiper-button-prev::after,
+.container-unique-slider .swiper-button-next::after {
+  color: #DD0000; 
+  opacity: 0.8;
 }
