@@ -77,7 +77,7 @@ const ShoppingCartMenu = ({ openShoppingCartMenu, onClose }: ShoppingCartMenuPro
             >
 
             </div>
-            <section className={`${openShoppingCartMenu ? 'block' : 'hidden'} w-[80%] h-screen overflow-auto bg-white fixed top-0 right-0 z-20 py-5 md:w-[50%] shadow-lg  flex flex-col gap-10`}>
+            <section className={`${openShoppingCartMenu ? 'block' : 'hidden'} w-[80%] h-full overflow-auto bg-white fixed top-0 right-0 z-20 py-5 md:w-[50%] shadow-lg  flex flex-col gap-10`}>
                 <div>
                     <div className='flex justify-between items-center px-5'>
                         <h4 className='font-bold text-black/50 text-3xl'>
@@ -90,7 +90,7 @@ const ShoppingCartMenu = ({ openShoppingCartMenu, onClose }: ShoppingCartMenuPro
                             alt="icono-cerrar" />
                     </div>
                 </div>
-                <section className='flex flex-col items-center gap-10'>
+                <section className='w-full flex flex-col justify-center items-center gap-10'>
                     {
                         ShoppingCart.map(
                             ((productsCart) => (
@@ -103,7 +103,7 @@ const ShoppingCartMenu = ({ openShoppingCartMenu, onClose }: ShoppingCartMenuPro
                                         <img src={productsCart.image} alt={productsCart.name} />
                                     </div>
 
-                                    <div className='flex items-center gap-10 w-[60%]'>
+                                    <div className='flex flex-col justify-center items-center gap-2 sm:flex-row sm:gap-10'>
                                         <p className='font-bold text-black/50'>
                                             {productsCart.name}
                                         </p>
