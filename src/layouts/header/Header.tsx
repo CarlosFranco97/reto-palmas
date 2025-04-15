@@ -1,19 +1,58 @@
+import { useState } from 'react';
 import logoRetoPalmas from '../../assets/icon/logo-reto-palmas.svg';
 import shoppingCartIcon from '../../assets/icon/carrito-compras.svg';
 import hamburguerMenu from '../../assets/icon/menu-hamburguesa.svg';
+import HamburguerMenu from './HamburguerMenu';
+import ShoppingCartMenu from './ShoppingCartMenu';
 const Header = () => {
-    return ( 
+
+    const [isOpenHamburguerMenu, setIsOpenHamburguerMenu] = useState<boolean>(false);
+    
+    const [isOpenShoppingCartMenu, setIsOpenShoppingCartMenu] = useState<boolean>(false);
+
+    const closeHamburguerMenu = () => {
+        setIsOpenHamburguerMenu((prev) => !prev);
+    }
+
+    const closeShoppingCartMenu = () => {
+        setIsOpenShoppingCartMenu((prev) => !prev);
+    }
+
+    const cantidad:number = 5;
+
+    return (
         <header className='w-full h-[80px]'>
             <section className='flex justify-between h-full items-center px-3 font-bold'>
-                <img src={logoRetoPalmas} alt="" />
+                <img src={logoRetoPalmas} alt="logo-reto-palmas" />
                 <h1 className='text-white hidden text-2xl font-bold text-center sm:block sm:w-96'>
                     LA TIENDA PARA LOS AMANTES DE LOS CARROS
                 </h1>
                 <div className='flex justify-center items-center gap-5'>
-                    <img src={shoppingCartIcon} alt="" />
-                    <img src={hamburguerMenu} alt="" />
+
+                    <div className='relative'>
+                        <p className='flex justify-center items-center text-white text-[0.6rem] bg-[#DD0000] absolute top-0 right-0 transform -translate-y-2 translate-x-2 w-auto h-auto px-1 rounded-full shadow-lg'>
+                            {cantidad}
+                        </p>
+                        <img
+                            src={shoppingCartIcon}
+                            onClick={closeShoppingCartMenu}
+                            alt="carrito-compras"
+                            className='cursor-pointer' />
+                    </div>
+
+                    <img src={hamburguerMenu}
+                        onClick={closeHamburguerMenu}
+                        alt="menu-hamburguesa"
+                        className='cursor-pointer' />
                 </div>
             </section>
+            <HamburguerMenu
+                openHamburguerMenu={isOpenHamburguerMenu}
+                onClose={closeHamburguerMenu} />
+            <ShoppingCartMenu 
+                openShoppingCartMenu={isOpenShoppingCartMenu}
+                onClose={closeShoppingCartMenu}
+            />
         </header>
     )
 }

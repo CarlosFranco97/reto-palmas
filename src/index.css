@@ -5,4 +5,5 @@ body {
     font-family: 'Libre Franklin', sans-serif;
     background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
     background-color: black;
+    background-attachment: fixed;
 }
