@@ -3,7 +3,7 @@ const Videos = () => {
     return (
         <section className='w-full min-h-screen'>
         <div className='w-full h-auto flex flex-col justify-center items-center gap-20 text-white font-bold py-20'>
-            <h2 className='text-5xl'>
+            <h2 className='text-6xl'>
                 VIDEOS
             </h2>
             <div>

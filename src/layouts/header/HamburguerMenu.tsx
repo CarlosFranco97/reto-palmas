@@ -18,7 +18,7 @@ const HamburguerMenu = ({ openHamburguerMenu, onClose }: HamburguerMenuProps) =>
             <section className={`top-0 right-0 w-[80%] min-h-screen z-20 bg-[url("https://www.transparenttextures.com/patterns/white-wall-3-2.png")] bg-black shadow-xl sm:w-[50%] 
         ${(openHamburguerMenu) ? 'fixed' : 'hidden'}`}>
                 <div className='flex flex-col max-h-screen overflow-auto'>
-                    <div className='flex justify-between items-center px-2'>
+                    <div className='flex justify-between items-center px-5'>
                         <img
                             src={logoRetoPalmas}
                             alt="logo-reto-palmas" />
