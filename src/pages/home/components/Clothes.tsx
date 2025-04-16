@@ -13,7 +13,9 @@ const Clothes = () => {
                 <section className='flex flex-col gap-30 lg:flex-row'>
 
                     <div className='flex flex-col justify-center items-center gap-5'>
-                        <div className='bg-white h-64 w-96 relative'>
+                        <Link
+                            to={'/menclothing'}
+                            className='bg-white h-64 w-96 relative'>
                             <img
                                 src={modeloRopaHombreCompleta}
                                 className='w-64 h-64 absolute bottom-0 left-0 object-contain'
@@ -22,16 +24,18 @@ const Clothes = () => {
                                 src={modeloRopaHombre}
                                 className='w-64 h-64 absolute bottom-0 right-0 object-contain'
                                 alt="modelo-ropa-hombre" />
-                        </div>
+                        </Link >
                         <Link
-                            to={'/menclothing'} 
+                            to={'/menclothing'}
                             className='border-b-4 border-[#DD0000] text-center text-4xl cursor-pointer'>
                             HOMBRE
                         </Link>
                     </div>
 
                     <div className='flex flex-col justify-center items-center gap-5'>
-                        <div className='bg-white h-64 w-96 relative'>
+                        <Link
+                            to={'/menclothing'}
+                            className='bg-white h-64 w-96 relative'>
                             <img
                                 src={modeloRopaMujerCompleta}
                                 className='w-64 h-64 absolute bottom-0 right-0 object-contain'
@@ -40,9 +44,9 @@ const Clothes = () => {
                                 src={modeloRopaMujer}
                                 className='w-64 h-64 absolute bottom-0 left-0 object-contain'
                                 alt="modelo-ropa-mujer" />
-                        </div>
+                        </Link>
                         <Link
-                            to={'/womenclothing'} 
+                            to={'/womenclothing'}
                             className='border-b-4 border-[#DD0000] text-center text-4xl'>
                             MUJER
                         </Link>

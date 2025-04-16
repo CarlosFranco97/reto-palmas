@@ -29,7 +29,7 @@ const HamburguerMenu = ({ openHamburguerMenu, onClose }: HamburguerMenuProps) =>
                             className='cursor-pointer'
                         />
                     </div>
-                    <nav className='flex flex-col justify-between items-center font-bold text-white text-center min-h-screen py-3'>
+                    <nav className='h-screen flex flex-col justify-evenly items-center font-bold text-white text-center py-3'>
                         <a className='border-b-4 border-[#DD0000]' href="">
                             EVENTOS
                         </a>
