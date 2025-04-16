@@ -2,6 +2,9 @@ import { createBrowserRouter } from "react-router-dom";
 import RetoPalmas from "../pages/home/RetoPalmas";
 import MenClothing from "../pages/clothing/MenClothing";
 import WomenClothing from "../pages/clothing/WomenClothing";
+import ReproPerformance from "../pages/service-pages/ReproPerformance";
+import StarCeiling from "../pages/service-pages/StarCeiling";
+import LedLights from "../pages/service-pages/LedLights";
 
 const router = createBrowserRouter([
     {
@@ -9,12 +12,24 @@ const router = createBrowserRouter([
         element: <RetoPalmas />
     }, 
     {
-        path: '/menclothing', 
+        path: '/clothing/menclothing', 
         element: <MenClothing />
     }, 
     {
-        path: '/womenclothing', 
+        path: '/clothing/womenclothing', 
         element: <WomenClothing />
+    }, 
+    {
+        path: '/services/reproperformance', 
+        element: <ReproPerformance />
+    }, 
+    {
+        path: '/services/starceiling',
+        element: <StarCeiling />
+    }, 
+    {
+        path: '/services/ledlights',
+        element: <LedLights />
     }
 ]); 
 
