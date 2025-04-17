@@ -5,7 +5,7 @@ import modeloRopaHombre from '../../../assets/image/modelo-ropa-hombre.webp';
 import { Link } from 'react-router-dom';
 const Clothes = () => {
     return (
-        <section className='w-full min-h-screen'>
+        <section className='w-full h-full'>
             <div className='w-full h-auto font-bold text-white flex flex-col justify-center items-center gap-20 py-20'>
                 <h2 className='text-6xl'>
                     ROPA
@@ -14,7 +14,7 @@ const Clothes = () => {
 
                     <div className='flex flex-col justify-center items-center gap-5'>
                         <Link
-                            to={'/menclothing'}
+                            to={'/clothing/menclothing'}
                             className='bg-white h-64 w-96 relative'>
                             <img
                                 src={modeloRopaHombreCompleta}
@@ -26,7 +26,7 @@ const Clothes = () => {
                                 alt="modelo-ropa-hombre" />
                         </Link >
                         <Link
-                            to={'/menclothing'}
+                            to={'/clothing/menclothing'}
                             className='border-b-4 border-[#DD0000] text-center text-4xl cursor-pointer'>
                             HOMBRE
                         </Link>
@@ -34,7 +34,7 @@ const Clothes = () => {
 
                     <div className='flex flex-col justify-center items-center gap-5'>
                         <Link
-                            to={'/menclothing'}
+                            to={'/clothing/womenclothing'}
                             className='bg-white h-64 w-96 relative'>
                             <img
                                 src={modeloRopaMujerCompleta}
@@ -46,7 +46,7 @@ const Clothes = () => {
                                 alt="modelo-ropa-mujer" />
                         </Link>
                         <Link
-                            to={'/womenclothing'}
+                            to={'/clothing/womenclothing'}
                             className='border-b-4 border-[#DD0000] text-center text-4xl'>
                             MUJER
                         </Link>

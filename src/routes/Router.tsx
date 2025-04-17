@@ -5,6 +5,7 @@ import WomenClothing from "../pages/clothing/WomenClothing";
 import ReproPerformance from "../pages/service-pages/ReproPerformance";
 import StarCeiling from "../pages/service-pages/StarCeiling";
 import LedLights from "../pages/service-pages/LedLights";
+import Keychains from "../pages/product/Keychains";
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
     {
         path: '/services/ledlights',
         element: <LedLights />
+    },
+    {
+        path: '/products/keychains',
+        element: <Keychains />
     }
 ]); 
 

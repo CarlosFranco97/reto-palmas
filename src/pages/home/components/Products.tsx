@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom';
 import rcDriftPorsche from '../../../assets/image/rc-drift-porsche.webp';
 import rcDriftSkyline from '../../../assets/image/rc-drift-skyline.webp';
 
 const Products = () => {
     return (
         <section className='w-full min-h-screen'>
-            <div className='w-full h-auto flex flex-col justify-center items-center gap-20 text-white font-bold py-20'>
+            <div className='w-full h-auto flex flex-col justify-center items-center gap-20 text-white font-bold'>
                 <h2 className='text-5xl sm:text-6xl'>
                     PRODUCTOS
                 </h2>
@@ -29,9 +30,12 @@ const Products = () => {
                         className='object-contain w-64 h-64'
                             src={rcDriftPorsche}
                             alt="rc-drift-porsche" />
-                        <button className='border border-[#DD0000] px-3 py-2'>
+                        <Link
+                            to={'/products/keychains'} 
+                            className='border border-[#DD0000] px-3 py-2'>
                             VER MÁS
-                        </button>
+                        </Link>
+
                     </section>
                     <section className='flex flex-col justify-around items-center h-96 w-80 md:w-40 lg:w-48'>
                         <h4 className='text-3xl'>

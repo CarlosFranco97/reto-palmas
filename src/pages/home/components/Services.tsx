@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Services = () => {
     return (
         <section className='w-full min-h-screen'>
-        <div className='w-full h-auto flex flex-col justify-center items-center gap-20 text-white font-bold py-20'>
+        <div className='w-full h-screen flex flex-col justify-center items-center gap-20 text-white font-bold'>
             <h2 className='text-6xl'>
                 SERVICIOS
             </h2>

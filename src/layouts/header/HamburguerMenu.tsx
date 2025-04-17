@@ -15,9 +15,9 @@ const HamburguerMenu = ({ openHamburguerMenu, onClose }: HamburguerMenuProps) =>
                 onClick={onClose}
             ></div>
 
-            <section className={`top-0 right-0 w-[80%] min-h-screen z-20 bg-[url("https://www.transparenttextures.com/patterns/white-wall-3-2.png")] bg-black shadow-xl sm:w-[50%] 
+            <section className={`top-0 right-0 w-[80%] h-full z-20 bg-[url("https://www.transparenttextures.com/patterns/white-wall-3-2.png")] bg-black shadow-xl sm:w-[50%] 
         ${(openHamburguerMenu) ? 'fixed' : 'hidden'}`}>
-                <div className='flex flex-col max-h-screen overflow-auto'>
+                <div className='flex flex-col h-screen'>
                     <div className='flex justify-between items-center px-5'>
                         <img
                             src={logoRetoPalmas}
@@ -29,7 +29,7 @@ const HamburguerMenu = ({ openHamburguerMenu, onClose }: HamburguerMenuProps) =>
                             className='cursor-pointer'
                         />
                     </div>
-                    <nav className='h-screen flex flex-col justify-evenly items-center font-bold text-white text-center py-3'>
+                    <nav className='flex flex-col justify-evenly items-center h-screen font-bold text-white text-center'>
                         <a className='border-b-4 border-[#DD0000]' href="">
                             EVENTOS
                         </a>
