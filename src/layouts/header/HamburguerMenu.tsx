@@ -26,7 +26,7 @@ const HamburguerMenu = ({ openHamburguerMenu, onClose }: HamburguerMenuProps) =>
                             src={iconoCerrar}
                             onClick={() => onClose()}
                             alt="icono-cerrar"
-                            className='cursor-pointer'
+                            className='cursor-pointer lg:w-[40px] lg:h-[40px]'
                         />
                     </div>
                     <nav className='flex flex-col justify-evenly items-center h-screen font-bold text-white text-center'>

@@ -85,9 +85,9 @@ const ShoppingCartMenu = ({ openShoppingCartMenu, onClose }: ShoppingCartMenuPro
                         </h4>
                         <img
                             onClick={onClose}
-                            className='cursor-pointer'
                             src={iconoCerrar}
-                            alt="icono-cerrar" />
+                            className='cursor-pointer lg:w-[40px] lg:h-[40px]'
+                            alt='icono-cerrar' />
                     </div>
                 </div>
                 <section className='w-full flex flex-col justify-center items-center gap-10'>
@@ -119,8 +119,8 @@ const ShoppingCartMenu = ({ openShoppingCartMenu, onClose }: ShoppingCartMenuPro
                                         <button className='border border-[#DD0000] py-1 px-2 cursor-pointer'>
                                             Eliminar
                                         </button>
-                                    </div>
 
+                                    </div>
                                 </div>
 
                             ))

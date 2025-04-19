@@ -37,20 +37,20 @@ const Header = () => {
                 <div className='flex justify-center items-center gap-5'>
 
                     <div className='relative'>
-                        <p className='flex justify-center items-center text-white text-[0.6rem] bg-[#DD0000] absolute top-0 right-0 transform -translate-y-2 translate-x-2 w-auto h-auto px-1 rounded-full shadow-lg'>
+                        <p className='flex justify-center items-center text-white text-[0.6rem] bg-[#DD0000] absolute top-0 right-0 transform -translate-y-2 translate-x-2 w-auto h-auto px-1 rounded-full shadow-lg lg:text-[0.8rem]'>
                             {cantidad}
                         </p>
                         <img
                             src={shoppingCartIcon}
                             onClick={closeShoppingCartMenu}
                             alt="carrito-compras"
-                            className='cursor-pointer' />
+                            className='cursor-pointer lg:w-[40px] lg:h-[40px]' />
                     </div>
 
                     <img src={hamburguerMenu}
                         onClick={closeHamburguerMenu}
                         alt="menu-hamburguesa"
-                        className='cursor-pointer' />
+                        className='cursor-pointer lg:w-[40px] lg:h-[40px]' />
                 </div>
             </section>
             <HamburguerMenu

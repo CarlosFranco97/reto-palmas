@@ -5,33 +5,35 @@ import rcDriftSkyline from '../../../assets/image/rc-drift-skyline.webp';
 const Products = () => {
     return (
         <section className='w-full min-h-screen'>
-            <div className='w-full h-auto flex flex-col justify-center items-center gap-20 text-white font-bold'>
+            <div className='w-full h-full flex flex-col justify-center items-center gap-20 text-white font-bold py-20'>
                 <h2 className='text-5xl sm:text-6xl'>
                     PRODUCTOS
                 </h2>
-                <div className='flex flex-col items-center gap-10 md:flex-row lg:flex-row lg:gap-20'>
+                <div className='w-full h-full grid grid-cols-1 place-items-center gap-10 md:grid-cols-2 lg:grid-cols-4'>
                     <section className='flex flex-col justify-around items-center h-96 w-80 md:w-40 lg:w-48'>
                         <h4 className='text-3xl'>
                             TERMOS
                         </h4>
                         <img
-                        className='object-contain w-64 h-64' 
+                            className='object-contain w-64 h-64'
                             src={rcDriftPorsche}
                             alt="rc-drift-porsche" />
-                        <button className='border border-[#DD0000] px-3 py-2'>
+                        <Link
+                            to={'/products/thermos'}
+                            className='border border-[#DD0000] px-3 py-2'>
                             VER MÁS
-                        </button>
+                        </Link>
                     </section>
                     <section className='flex flex-col justify-around items-center h-96 w-80 md:w-40 lg:w-48'>
                         <h4 className='text-3xl'>
                             LLAVEROS
                         </h4>
                         <img
-                        className='object-contain w-64 h-64'
+                            className='object-contain w-64 h-64'
                             src={rcDriftPorsche}
                             alt="rc-drift-porsche" />
                         <Link
-                            to={'/products/keychains'} 
+                            to={'/products/keychains'}
                             className='border border-[#DD0000] px-3 py-2'>
                             VER MÁS
                         </Link>
@@ -42,27 +44,33 @@ const Products = () => {
                             PERFORMANCE
                         </h4>
                         <img
-                        className='object-contain w-64 h-64'
+                            className='object-contain w-64 h-64'
                             src={rcDriftSkyline}
                             alt="rc-drift-porsche" />
-                        <button className='border border-[#DD0000] px-3 py-2'>
+                        <Link
+                            to={'/products/performance'}
+                            className='border border-[#DD0000] px-3 py-2'>
                             VER MÁS
-                        </button>
+                        </Link>
                     </section>
                     <section className='flex flex-col justify-around items-center h-96 w-80 md:w-40 lg:w-48'>
                         <h4 className='text-3xl'>
                             TUNNING
                         </h4>
                         <img
-                        className='object-contain w-64 h-64'
+                            className='object-contain w-64 h-64'
                             src={rcDriftSkyline}
                             alt="rc-drift-porsche" />
-                        <button className='border border-[#DD0000] px-3 py-2'>
+                        <Link 
+                        to={'/products/tunning'}
+                        className='border border-[#DD0000] px-3 py-2'>
                             VER MÁS
-                        </button>
+                        </Link>
                     </section>
                 </div>
-                <h3 className='text-6xl text-center'>¿DE QUÉ TE ANTOJAS HOY?</h3>
+                <h3 className='text-6xl text-center'>
+                    ¿DE QUÉ TE ANTOJAS HOY?
+                </h3>
             </div>
         </section>
     )
