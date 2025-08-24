@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import logoRetoPalmas from '../../assets/icon/logo-reto-palmas.svg';
 import shoppingCartIcon from '../../assets/icon/carrito-compras.svg';
 import hamburguerMenu from '../../assets/icon/menu-hamburguesa.svg';
@@ -12,21 +12,21 @@ const Header = () => {
 
     const [isOpenShoppingCartMenu, setIsOpenShoppingCartMenu] = useState<boolean>(false);
 
-    const closeHamburguerMenu = () => {
+    const handleToggleHamburguerMenu = useCallback(() => {
         setIsOpenHamburguerMenu((prev) => !prev);
-    }
+    }, []);
 
-    const closeShoppingCartMenu = () => {
+    const handleToggleShoppingCartMenu = useCallback(() => {
         setIsOpenShoppingCartMenu((prev) => !prev);
-    }
+    }, []);
 
     const cantidad: number = 5;
 
     return (
         <header className='w-full h-[80px]'>
             <section className='flex justify-between h-full items-center px-3 font-bold'>
-                <Link 
-                to={'/'}>
+                <Link
+                    to={'/'}>
                     <img
                         src={logoRetoPalmas}
                         alt="logo-reto-palmas" />
@@ -42,24 +42,33 @@ const Header = () => {
                         </p>
                         <img
                             src={shoppingCartIcon}
-                            onClick={closeShoppingCartMenu}
+                            onClick={handleToggleShoppingCartMenu}
                             alt="carrito-compras"
                             className='cursor-pointer lg:w-[40px] lg:h-[40px]' />
                     </div>
 
                     <img src={hamburguerMenu}
-                        onClick={closeHamburguerMenu}
+                        onClick={handleToggleHamburguerMenu}
                         alt="menu-hamburguesa"
                         className='cursor-pointer lg:w-[40px] lg:h-[40px]' />
                 </div>
             </section>
-            <HamburguerMenu
-                openHamburguerMenu={isOpenHamburguerMenu}
-                onClose={closeHamburguerMenu} />
-            <ShoppingCartMenu
-                openShoppingCartMenu={isOpenShoppingCartMenu}
-                onClose={closeShoppingCartMenu}
-            />
+            {
+                isOpenHamburguerMenu && (
+                    <HamburguerMenu
+                        openHamburguerMenu={isOpenHamburguerMenu}
+                        onClose={handleToggleHamburguerMenu} />
+                )
+            }
+
+            {
+                isOpenShoppingCartMenu && (
+                    <ShoppingCartMenu
+                        openShoppingCartMenu={isOpenShoppingCartMenu}
+                        onClose={handleToggleShoppingCartMenu}
+                    />
+                )
+            }
         </header>
     )
 }

@@ -9,6 +9,8 @@ import Thermos from '../pages/product/Thermos';
 import Keychains from '../pages/product/Keychains';
 import Performance from '../pages/product/Performance';
 import Tunning from '../pages/product/Tunning';
+import CartShippingInformation from '../pages/cartShippingInformation/CartShippingInformation';
+import OrderSummary from '../pages/orderSummary/OrderSummary';
 
 const router = createBrowserRouter([
     {
@@ -50,8 +52,15 @@ const router = createBrowserRouter([
     {
         path: '/products/tunning', 
         element: <Tunning />
+    }, 
+    {
+        path: '/cartShippingInformation', 
+        element: <CartShippingInformation />
+    }, 
+    {
+        path: '/orderSummary', 
+        element: <OrderSummary />
     }
-
 ]); 
 
 export default router; 

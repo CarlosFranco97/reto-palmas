@@ -5,7 +5,8 @@ interface contentProductItem {
     id: string, 
     price: number, 
     name: string, 
-    image: string
+    image: string,
+    category: string
 }
 
 interface ProductSectionProps {

@@ -1,5 +1,5 @@
 import videoRetoPalmas from '../../../assets/image/videos.webp';
-const Videos = () => {
+const SocialMedia = () => {
     return (
         <section className='w-full min-h-screen'>
         <div className='w-full h-full flex flex-col justify-center items-center gap-20 text-white font-bold py-20'>
@@ -17,4 +17,4 @@ const Videos = () => {
     )
 }
 
-export default Videos;
+export default SocialMedia;

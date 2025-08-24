@@ -1,19 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap');
-@import "tailwindcss";  
+@import "tailwindcss";
 
-
-
-body {
-    font-family: 'Libre Franklin', sans-serif;
-    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
-    background-color: black;
-    background-attachment: fixed;
+* {
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #DD0000 rgba(255, 255, 255, 0);
 }
 
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  background-color: black;
+  background-image: url("https://www.transparenttextures.com/patterns/white-wall-3-2.png");
+  background-attachment: fixed;
+}
 
 
 .container-unique-slider .swiper-button-prev::after,
 .container-unique-slider .swiper-button-next::after {
-  color: #DD0000; 
+  color: #DD0000;
   opacity: 0.8;
 }

@@ -1,12 +1,12 @@
 import logoRetoPalmas from '../../assets/icon/logo-reto-palmas.svg';
 import iconoCerrar from '../../assets/icon/icono-cerrar.svg';
+import { memo } from 'react';
 
 interface HamburguerMenuProps {
     openHamburguerMenu: boolean,
     onClose: () => void
 }
 const HamburguerMenu = ({ openHamburguerMenu, onClose }: HamburguerMenuProps) => {
-
     return (
         <>
             <div
@@ -24,9 +24,9 @@ const HamburguerMenu = ({ openHamburguerMenu, onClose }: HamburguerMenuProps) =>
                             alt="logo-reto-palmas" />
                         <img
                             src={iconoCerrar}
-                            onClick={() => onClose()}
+                            onClick={onClose}
                             alt="icono-cerrar"
-                            className='cursor-pointer lg:w-[40px] lg:h-[40px]'
+                            className='cursor-pointer md:w-[25px] md:h-[25px] lg:w-[30px] lg:h-[30px]'
                         />
                     </div>
                     <nav className='flex flex-col justify-evenly items-center h-screen font-bold text-white text-center'>
@@ -55,4 +55,4 @@ const HamburguerMenu = ({ openHamburguerMenu, onClose }: HamburguerMenuProps) =>
     )
 }
 
-export default HamburguerMenu;
+export default memo(HamburguerMenu);

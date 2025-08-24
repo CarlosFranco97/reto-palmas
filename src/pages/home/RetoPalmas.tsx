@@ -3,7 +3,7 @@ import Clothes from './components/Clothes';
 import Main from './components/Main';
 import Products from './components/Products';
 import Services from './components/Services';
-import Videos from './components/Videos';
+import SocialMedia from './components/SocialMedia';
 
 const RetoPalmas = () => {
     return (
@@ -12,7 +12,7 @@ const RetoPalmas = () => {
             <Clothes />
             <Products />
             <Services />
-            <Videos />
+            <SocialMedia />
         </Layout>
     )
 }

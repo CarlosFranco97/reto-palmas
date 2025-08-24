@@ -1,9 +1,11 @@
 //import { useState } from 'react';
+import { memo } from 'react';
 import iconoCerrar from '../../assets/icon/icono-cerrar-negra.svg';
 import busoCustom from '../../assets/image/buso-custom.webp';
 import fundaCustom from '../../assets/image/funda-custom.webp';
 import rcDriftPorsche from '../../assets/image/rc-drift-porsche.webp';
 import { calculateTotalPrice, formatCurrencyCOP } from '../../helpers/cartHelper';
+import { Link } from 'react-router-dom';
 
 interface ShoppingCartMenuProps {
     openShoppingCartMenu: boolean,
@@ -86,7 +88,7 @@ const ShoppingCartMenu = ({ openShoppingCartMenu, onClose }: ShoppingCartMenuPro
                         <img
                             onClick={onClose}
                             src={iconoCerrar}
-                            className='cursor-pointer lg:w-[40px] lg:h-[40px]'
+                            className='cursor-pointer md:w-[25px] md:h-[25px] lg:w-[30px] lg:h-[30px]'
                             alt='icono-cerrar' />
                     </div>
                 </div>
@@ -138,9 +140,11 @@ const ShoppingCartMenu = ({ openShoppingCartMenu, onClose }: ShoppingCartMenuPro
                         </p>
                     </div>
 
-                    <button className='border border-[#DD0000] px-3 py-2 cursor-pointer'>
+                    <Link 
+                    to={'/cartShippingInformation'} 
+                    className='border border-[#DD0000] px-3 py-2 cursor-pointer'>
                         Comprar
-                    </button>
+                    </Link>
 
                 </section>
             </section>
@@ -149,4 +153,4 @@ const ShoppingCartMenu = ({ openShoppingCartMenu, onClose }: ShoppingCartMenuPro
     )
 }
 
-export default ShoppingCartMenu; 
+export default memo(ShoppingCartMenu); 
