@@ -1,5 +1,5 @@
 import lucesLedInterior from '../../assets/image/luces-led-interior.webp';
-import Layout from '../../layouts/Layout';
+import MainLayout from '../../layouts/MainLayout';
 import ServiceSection from './components/ServiceSection';
 
 const LedLights = () => {
@@ -12,7 +12,7 @@ const LedLights = () => {
 
     return (
        
-       <Layout>
+       <MainLayout>
             <div className='w-full max-h-screen'>
                 <section className='w-full h-[700px] py-5'>
                     <ServiceSection
@@ -22,7 +22,7 @@ const LedLights = () => {
                     />
                 </section>
             </div>
-        </Layout>
+        </MainLayout>
 
     )
 }

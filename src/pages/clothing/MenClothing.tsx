@@ -1,9 +1,9 @@
 
-import Layout from '../../layouts/Layout';
 import SliderClothing from './components/SliderClothing';
 import busoBlanco from '../../assets/image/buso-blanco.webp';
 import busoNegro from '../../assets/image/buso-negro.webp';
 import busoCustom from '../../assets/image/buso-custom.webp';
+import MainLayout from '../../layouts/MainLayout';
 
 const MenClothing = () => {
     
@@ -30,13 +30,13 @@ const MenClothing = () => {
     ]
 
     return (
-        <Layout>
+        <MainLayout>
             <div className='w-full min-h-screen'>
                 <SliderClothing
                     contentSlider={contentSlider} 
                     title={title}/>
             </div>
-        </Layout>
+        </MainLayout>
     )
 
 }

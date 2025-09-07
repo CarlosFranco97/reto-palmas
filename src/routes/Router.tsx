@@ -9,8 +9,9 @@ import Thermos from '../pages/product/Thermos';
 import Keychains from '../pages/product/Keychains';
 import Performance from '../pages/product/Performance';
 import Tunning from '../pages/product/Tunning';
-import CartShippingInformation from '../pages/cartShippingInformation/CartShippingInformation';
 import OrderSummary from '../pages/orderSummary/OrderSummary';
+import InsuranceQuoteForm from '../pages/insuranceQuoteForm/InsuranceQuoteForm';
+import AddressForm from '../pages/addressFormModal/AddressForm';
 
 const router = createBrowserRouter([
     {
@@ -54,12 +55,16 @@ const router = createBrowserRouter([
         element: <Tunning />
     }, 
     {
-        path: '/cartShippingInformation', 
-        element: <CartShippingInformation />
+        path: '/addressformm', 
+        element: <AddressForm />
     }, 
     {
-        path: '/orderSummary', 
+        path: '/ordersummary', 
         element: <OrderSummary />
+    }, 
+    {
+        path: '/insurancequoteform', 
+        element: <InsuranceQuoteForm />
     }
 ]); 
 

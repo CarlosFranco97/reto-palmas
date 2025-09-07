@@ -1,4 +1,4 @@
-import Layout from '../../layouts/Layout';
+import MainLayout from '../../layouts/MainLayout';
 import Clothes from './components/Clothes';
 import Main from './components/Main';
 import Products from './components/Products';
@@ -7,13 +7,13 @@ import SocialMedia from './components/SocialMedia';
 
 const RetoPalmas = () => {
     return (
-        <Layout>
+        <MainLayout>
             <Main />
             <Clothes />
             <Products />
             <Services />
             <SocialMedia />
-        </Layout>
+        </MainLayout>
     )
 }
 

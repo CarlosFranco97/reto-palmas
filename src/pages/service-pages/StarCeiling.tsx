@@ -1,6 +1,6 @@
-import Layout from "../../layouts/Layout";
 import ServiceSection from "./components/ServiceSection";
 import techoEstrellado from '../../assets/image/techo-estrellado.webp';
+import MainLayout from "../../layouts/MainLayout";
 const StarCeiling = () => {
     
     const serviceContent = {
@@ -10,7 +10,7 @@ const StarCeiling = () => {
     }
 
     return (
-        <Layout>
+        <MainLayout>
             <div className='w-full max-h-screen'>
                 <section className='w-full h-[700px] py-5'>
                     <ServiceSection
@@ -20,7 +20,7 @@ const StarCeiling = () => {
                     />
                 </section>
             </div>
-        </Layout>
+        </MainLayout>
     )
 }
 

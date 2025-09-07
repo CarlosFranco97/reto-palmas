@@ -1,6 +1,6 @@
-import Layout from "../../layouts/Layout";
 import reproPerformance from '../../assets/image/repro-performance.webp';
 import ServiceSection from "./components/ServiceSection";
+import MainLayout from "../../layouts/MainLayout";
 
 const ReproPerformance = () => {
 
@@ -12,7 +12,7 @@ const ReproPerformance = () => {
 
     return (
 
-        <Layout>
+        <MainLayout>
             <div className='w-full max-h-screen'>
                 <section className='w-full h-[700px] py-5'>
                     <ServiceSection
@@ -22,7 +22,7 @@ const ReproPerformance = () => {
                     />
                 </section>
             </div>
-        </Layout>
+        </MainLayout>
     )
 }
 

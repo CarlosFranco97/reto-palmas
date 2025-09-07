@@ -1,5 +1,5 @@
-import logoRetoPalmas from '../../assets/icon/logo-reto-palmas.svg';
-import iconoCerrar from '../../assets/icon/icono-cerrar.svg';
+import logoRetoPalmas from '../assets/icon/logo-reto-palmas.svg';
+import iconoCerrar from '../assets/icon/icono-cerrar.svg';
 import { memo } from 'react';
 
 interface HamburguerMenuProps {

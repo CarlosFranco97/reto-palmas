@@ -1,5 +1,5 @@
-import logoRetoPalmas from '../assets/icon/logo-reto-palmas.svg';
-const Footer = () => {
+import logoRetoPalmas from '../../assets/icon/logo-reto-palmas.svg';
+const MainFooter = () => {
     return (
         <footer className='w-full h-[180px]'>
             <section className='w-full h-full flex flex-col justify-center items-center py-5'>
@@ -14,4 +14,4 @@ const Footer = () => {
     )
 }
 
-export default Footer;
+export default MainFooter;
