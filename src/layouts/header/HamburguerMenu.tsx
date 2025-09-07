@@ -15,7 +15,7 @@ const HamburguerMenu = ({ openHamburguerMenu, onClose }: HamburguerMenuProps) =>
                 onClick={onClose}
             ></div>
 
-            <section className={`top-0 right-0 w-[80%] h-full z-20 bg-[url("https://www.transparenttextures.com/patterns/white-wall-3-2.png")] bg-black shadow-xl sm:w-[50%] 
+            <section className={`top-0 right-0 w-[80%] h-full z-20 bg-[url("https://www.transparenttextures.com/patterns/white-wall-3-2.png")] bg-black shadow-xl sm:w-[50%] md:w-[50%] lg:w-[30%]
         ${(openHamburguerMenu) ? 'fixed' : 'hidden'}`}>
                 <div className='flex flex-col h-screen'>
                     <div className='flex justify-between items-center px-5'>

@@ -77,11 +77,11 @@ const ShoppingCartMenu = ({ openShoppingCartMenu, onClose }: ShoppingCartMenuPro
             >
 
             </div>
-            <section className={`${openShoppingCartMenu ? 'block' : 'hidden'} w-[90%] h-full overflow-auto bg-white fixed top-0 right-0 z-20 py-5 md:w-[50%] shadow-lg  flex flex-col gap-10`}>
+            <section className={`${openShoppingCartMenu ? 'block' : 'hidden'} w-[90%] h-full overflow-auto bg-white fixed top-0 right-0 z-20 py-5 shadow-lg  flex flex-col gap-10 md:w-[50%] lg:w-[30%] `}>
                 <div>
                     <div className='flex justify-between items-center px-5'>
                         <h4 className='font-bold text-black/50 text-3xl'>
-                            MI CARRITO
+                            Mi carrito
                         </h4>
                         <img
                             onClick={onClose}
